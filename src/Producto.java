@@ -14,7 +14,49 @@ public class Producto {
     @Override
     public String toString() {
         return "Producto{" +
-                "nombre_producto='" + nombre_producto + '\'' +
+                "precio=" + precio +
+                ", marca='" + marca + '\'' +
+                ", nombre_producto='" + nombre_producto + '\'' +
                 '}';
+    }
+
+    public double getPrecio() {
+        return precio;
+    }
+
+    public void setPrecio(double precio) {
+        this.precio = precio;
+    }
+
+    public int getCodigo() {
+        return codigo;
+    }
+
+    public void setCodigo(int codigo) {
+        this.codigo = codigo;
+    }
+
+    public int getStock() {
+        return stock;
+    }
+
+    public void setStock(int stock) {
+        this.stock = stock;
+    }
+
+    public String getMarca() {
+        return marca;
+    }
+
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
+
+    public String getNombre_producto() {
+        return nombre_producto;
+    }
+
+    public void setNombre_producto(String nombre_producto) {
+        this.nombre_producto = nombre_producto;
     }
 }

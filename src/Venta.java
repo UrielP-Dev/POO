@@ -1,23 +1,30 @@
 public class Venta {
 
-    private double precio, total, subtotal;
+    private double precio, total, subtotal=0;
     private int unidades;
 
 
-    public Venta(double precio, double total, double subtotal, int unidades) {
-        this.precio = precio;
-        this.total = total;
-        this.subtotal = subtotal;
-        this.unidades = unidades;
+    public Venta() {
+
     }
-    public Double subtotal(){
-        this.subtotal = precio*unidades;
+    public double subtotal(double precio, int unidades){
+
+
+        this.subtotal += precio*unidades;
 
         return this.subtotal;}
 
 
-    public Double total(){
+    public double total(double total){
+       total = total +(total*.16);
 
 
-    return this.total;}
+    return total;}
+
+    public boolean stock(int stock, int cantidad){
+        cantidad = stock - cantidad;
+        if (stock == 0){
+            return false;}
+
+    return true;}
 }
