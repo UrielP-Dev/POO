@@ -22,7 +22,7 @@ public class Venta {
     return total;}
 
     public boolean stock(int stock, int cantidad){
-        cantidad = stock - cantidad;
+        stock -= cantidad;
         if (stock == 0){
             return false;}
 

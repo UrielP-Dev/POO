@@ -1,6 +1,6 @@
 public class Producto {
     private double precio;
-    private int codigo, stock;
+    public int codigo, stock;
     private String marca, nombre_producto;
 
     public Producto(double precio, int codigo, int stock, String marca, String nombre_producto) {
@@ -16,7 +16,7 @@ public class Producto {
         return "Producto{" +
                 "precio=" + precio +
                 ", marca='" + marca + '\'' +
-                ", nombre_producto='" + nombre_producto + '\'' +
+                ", nombre_producto='" + nombre_producto + '\'' +", stock=´"+ stock +'\''+
                 '}';
     }
 
